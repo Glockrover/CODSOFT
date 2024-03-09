@@ -18,8 +18,6 @@ class ContactBook:
             print(f"{contact.name}\t{contact.phone}\t{contact.email}\t{contact.address}")
 
     def search_contact(self, keyword):
-        time.sleep(1)
-        os.system("clear")
         results = []
         for contact in self.contacts:
             if keyword.lower() in contact.name.lower() or keyword.lower() in contact.phone:
